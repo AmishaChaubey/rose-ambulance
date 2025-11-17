@@ -122,7 +122,7 @@ export default function BlogDetail() {
                   <div className="max-w-5xl mx-auto">
           <button
             onClick={() => navigate("/blog")}
-            className="flex items-center gap-2 text-white p-3 rounded-4xl hover:bg-gray-600 transition-colors duration-300 bg-gray-800"
+            className="flex items-center gap-2 text-white p-4 rounded-lg hover:bg-gray-600 transition-colors duration-300 bg-gradient-to-r from-gray-700 to-gray-900"
           >
             <ArrowLeft size={20} />
             <span className="font-medium">Back to Blog</span>

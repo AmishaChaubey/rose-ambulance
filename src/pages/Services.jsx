@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Activity, Star, CheckCircle, ArrowRight, Phone, MapPin, Clock, Heart, Home, Car, User, Sparkles, Feather, Trees, Sun } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from "framer-motion";
+
 import { IoBookOutline } from "react-icons/io5";
 
 export default function ServicesPage() {
@@ -51,12 +53,27 @@ export default function ServicesPage() {
       id: 4,
       icon: User,
       title: 'Pandit for Funeral',
-      image: "/blog-img/pandit.jpg",
+      image: "/blog-img/pandit2.jpg",
       description: 'Experienced and knowledgeable pandits for conducting funeral rites',
       details: 'We arrange experienced pandits who understand the importance of proper funeral rites. They guide families through the process with patience and respect for traditions.',
       features: ['Experienced Pandits', 'All Rituals Covered', 'Puja Materials', 'Guidance & Support'],
       color: '#1A202C',
     },
+     {
+  id: 5,
+  icon: User,
+  title: 'Deadbody Freezerbox',
+  image: "/blog-img/11.jpg",
+  description: 'Reliable and hygienic dead body freezer box services for safe preservation.',
+  details: 'We provide high-quality freezer boxes designed to preserve the body with proper temperature control. Our team ensures timely delivery, installation, and maintenance, offering families peace of mind during critical moments.',
+  features: [
+    '24/7 Availability',
+    'Hygienic & Temperature-Controlled Freezer Boxes',
+    'Doorstep Delivery & Pickup',
+    'Professional Handling & Support'
+  ],
+  color: '#1A202C',
+}
   ];
 
   const processSteps = [
@@ -103,7 +120,7 @@ export default function ServicesPage() {
           {/* Background Image with Parallax Effect */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: "url('/banner6.png')" }}
+            style={{ backgroundImage: "url('/banner12.png')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/70 to-transparent"></div>
           </div>
@@ -117,6 +134,7 @@ export default function ServicesPage() {
               <h1 className="text-5xl md:text-6xl font-bold mb-4 font-serif leading-tight drop-shadow-lg">
                 Our Services
               </h1>
+
               <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 drop-shadow">
                 Explore medical stories, health tips, and ambulance service updates.
               </p>
@@ -125,10 +143,12 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* Services Section - New Card Design */}
+      {/* Services Section - Grid with Centered Last Card */}
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our <span className="text-gray-600">Services</span></h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4  font-serif">Our <span className="text-gray-600">Services</span></h2>
+                                    <motion.div className="w-24 h-1 bg-gray-800 mx-auto mb-3 mt-1"></motion.div>
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive support services to help you navigate this difficult time
           </p>
@@ -137,15 +157,16 @@ export default function ServicesPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const isLastCard = index === services.length - 1;
             return (
               <div
                 key={service.id}
-                className={`group relative transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}
+                className={`${isLastCard ? 'md:col-span-2 md:flex md:justify-center' : ''} transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}
                 style={{ transitionDelay: `${index * 150}ms` }}
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                <div className={`${isLastCard ? 'md:w-2/3 lg:w-1/2' : 'w-full'} bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden`}>
                   {/* Image Section */}
                   <div className="relative h-73 overflow-hidden">
                   
@@ -222,7 +243,7 @@ export default function ServicesPage() {
 
               {/* Right Side - Content */}
               <div className="p-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Service Details</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6 font-serif">Service Details</h2>
 
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   {services[activeService].details}
@@ -238,7 +259,7 @@ export default function ServicesPage() {
                 </div>
 
           <Link to="/contact">
-  <button className="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-gray-700 to-gray-900 text-white text-sm sm:text-base font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center">
+  <button className="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-gray-700 to-gray-900 text-white text-sm sm:text-base font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center">
     Request This Service
     <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
   </button>
@@ -253,7 +274,7 @@ export default function ServicesPage() {
       {/* Process Section - New Design */}
   <div className="max-w-7xl mx-auto px-6 py-20">
   <div className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
-    <h2 className="text-4xl font-bold text-gray-900 mb-4">How We <span className="text-gray-600">Support You</span></h2>
+    <h2 className="text-4xl font-bold text-gray-900 mb-4  font-serif">How We <span className="text-gray-600">Support You</span></h2>
     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
       Our caring team is here to guide you through every step
     </p>
@@ -292,12 +313,12 @@ export default function ServicesPage() {
             <div className="inline-flex items-center justify-center p-4 bg-white rounded-full shadow-lg mb-6">
               <Heart className="w-8 h-8 text-gray-600" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">We're Here For You</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4  font-serif">We're Here For You</h2>
             <p className="text-xl text-gray-600 mb-8">
               Contact us anytime for compassionate support and professional funeral services
             </p>
             <Link to="/contact">
-              <button className="px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+              <button className="px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                 Get In Touch
               </button>
             </Link>

@@ -90,7 +90,7 @@ const testimonials = [
           <div className="inline-flex items-center justify-center w-14 h-14 bg-gray-700 rounded-full mb-3">
             <Quote className="w-6 h-6 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-3">Client Experiences</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-3 font-serif">Client Experiences</h2>
           <p className="text-gray-600 max-w-xl mx-auto text-sm">
             Hear from those who have experienced our compassionate care
           </p>

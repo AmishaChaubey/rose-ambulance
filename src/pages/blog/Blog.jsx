@@ -24,7 +24,7 @@ export default function BlogList() {
   {/* Background Image with Parallax Effect */}
   <div 
     className="absolute inset-0 bg-cover bg-center bg-fixed"
-    style={{ backgroundImage: "url(/banner6.png)" }}
+    style={{ backgroundImage: "url(/banner11.png)" }}
   >
     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/70 to-transparent"></div>
   </div>

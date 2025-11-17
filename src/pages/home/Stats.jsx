@@ -79,7 +79,7 @@ const StatsBar = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Our Statistics</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2  font-serif">Our Statistics</h2>
           <div className="w-24 h-1 bg-gray-800 mx-auto rounded-full"></div>
         </div>
 

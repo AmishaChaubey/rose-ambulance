@@ -114,7 +114,7 @@ export default function AboutPage() {
       <div className="py-16 bg-white relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <motion.h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Who We Are</motion.h2>
+            <motion.h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4  font-serif">Who We Are</motion.h2>
             <motion.div className="w-24 h-1 bg-gray-800 mx-auto"></motion.div>
           </div>
 
@@ -184,7 +184,7 @@ export default function AboutPage() {
       <div ref={statsRef} className="bg-gray-800 py-2 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <motion.h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 mt-2">Our Impact</motion.h2>
+            <motion.h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 mt-2  font-serif">Our Impact</motion.h2>
             <motion.div className="w-24 h-1 bg-white mx-auto"></motion.div>
             <p className="text-gray-300 mt-4 max-w-2xl mx-auto">Over a decade of dedication to saving lives.</p>
           </div>
@@ -219,7 +219,7 @@ export default function AboutPage() {
       <div className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Our Core Values</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4  font-serif">Our Core Values</h2>
             <div className="w-24 h-1 bg-gray-800 mx-auto"></div>
           </div>
 
@@ -244,7 +244,7 @@ export default function AboutPage() {
       <div className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">What Our Patients Say</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4  font-serif">What Our Patients Say</h2>
             <div className="w-24 h-1 bg-gray-800 mx-auto"></div>
           </div>
 
@@ -266,7 +266,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <div className="relative bg-gray-800 py-16 text-center text-white overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4  font-serif">
           <h2 className="text-4xl font-bold mb-6">Emergency <span className="text-gray-300">Need Help?</span></h2>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">   Contact us anytime for compassionate support and professional funeral services
             </p>

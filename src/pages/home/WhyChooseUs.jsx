@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
       <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-[#4A5568]/10 blur-3xl"></div>
 
       {/* Main Container with max-w-7xl */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10  font-serif">
         {/* Section Header */}
         <motion.div
           className="mb-12 sm:mb-16 text-center"

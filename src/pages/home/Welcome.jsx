@@ -52,7 +52,7 @@ export default function WelcomeSection() {
 
           {/* Simple CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-           <Link to='/services'> <button className="bg-gray-800 text-white px-8 py-3 rounded hover:bg-gray-700 transition-colors">
+           <Link to='/services'> <button className="bg-gradient-to-r from-gray-700 to-gray-900 text-white px-8 py-3 rounded hover:bg-gray-700 transition-colors">
               Our Services
             </button>
             </Link>
