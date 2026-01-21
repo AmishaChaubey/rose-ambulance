@@ -3,7 +3,7 @@ import { FiPhone } from 'react-icons/fi'; // Feather phone icon
 
 const CallIcon = () => {
   const handleCallClick = () => {
-    const phoneNumber = '919311974035';
+    const phoneNumber = '919355331118';
     window.location.href = `tel:${phoneNumber}`;
   };
 
@@ -12,7 +12,7 @@ const CallIcon = () => {
       <div className="relative group">
         <button
           onClick={handleCallClick}
-          className="w-14 h-14 bg-blue-800 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 ease-in-out active:scale-95 relative z-10 cursor-pointer"
+          className="w-14 h-14 bg-[#d03b38] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 ease-in-out active:scale-95 relative z-10 cursor-pointer"
           aria-label="Call us"
         >
           {/* React Icon */}

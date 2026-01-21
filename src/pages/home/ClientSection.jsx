@@ -1,0 +1,72 @@
+import React from 'react';
+
+export default function HospitalPartners() {
+  const partners = [
+    { name: 'City General Hospital', logo: 'CGH' },
+    { name: 'Felix Hospital', logo: 'FH' },
+    { name: 'Apollo Hospitals', logo: 'AH' },
+    { name: 'Max Healthcare', logo: 'MH' },
+    { name: 'Fortis Hospital', logo: 'FH' },
+    { name: 'Memorial Hospital', logo: 'MEM' },
+    { name: 'Central Healthcare', logo: 'CHC' },
+    { name: 'Metro Medical Center', logo: 'MMC' },
+  ];
+
+  return (
+    <section className="bg-white py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-bold text-[#d03b38] mb-3 sm:mb-4 px-2 " 
+style={{
+  fontFamily: "Arial, Helvetica, sans-serif"
+}}
+>
+            Our Partner Hospitals
+          </h2>
+          <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-transparent via-[#d03b38] to-transparent mx-auto" />
+
+          <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-2xl mx-auto mt-3 sm:mt-4 px-4">
+            Collaborating with leading healthcare institutions to provide exceptional medical services and comprehensive care
+          </p>
+        </div>
+
+        {/* Partners Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className="group relative bg-slate-50 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-md shadow-black flex items-center justify-center transition-all duration-300 hover:bg-slate-100 hover:shadow-lg hover:-translate-y-1 border border-slate-200 cursor-pointer"
+            >
+              <div className="text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-2 sm:mb-3 bg-slate-700 rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-lg md:text-xl group-hover:bg-slate-800 transition-colors duration-300">
+                  {partner.logo}
+                </div>
+                <p className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-slate-900 leading-tight">
+                  {partner.name}
+                </p>
+              </div>
+              
+              {/* Medical cross accent */}
+              <div className="absolute top-2 right-2 sm:top-3 sm:right-3 w-3 h-3 sm:w-4 sm:h-4 text-slate-400 group-hover:text-slate-600 transition-colors duration-300">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7V2z"/>
+                </svg>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Trust Badge */}
+        <div className="mt-8 sm:mt-10 md:mt-12 text-center">
+          <div className="inline-flex items-center gap-2 bg-slate-100 px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-slate-300">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-slate-700 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+            </svg>
+            <span className="text-slate-700 font-semibold text-xs sm:text-sm md:text-base  font-serif">All Partners Verified & Accredited</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

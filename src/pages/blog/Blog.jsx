@@ -24,7 +24,7 @@ export default function BlogList() {
   {/* Background Image with Parallax Effect */}
   <div 
     className="absolute inset-0 bg-cover bg-center bg-fixed"
-    style={{ backgroundImage: "url(/banner11.png)" }}
+    style={{ backgroundImage: "url(https://images.pexels.com/photos/7527770/pexels-photo-7527770.jpeg)" }}
   >
     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/70 to-transparent"></div>
   </div>
@@ -51,7 +51,7 @@ export default function BlogList() {
 </div>
 
       {/* 📰 Blog Grid */}
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogData.map((blog) => (
             <article
@@ -72,7 +72,7 @@ export default function BlogList() {
                 </p>
                 <button
                   onClick={() => navigate(`/blog/${blog.id}`)}
-                  className="text-gray-800 font-semibold hover:text-gray-600 transition"
+                  className="text-[#d03b38] font-semibold  transition"
                 >
                   Learn More →
                 </button>

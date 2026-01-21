@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const images = ["/banner4.png", "/banner5.png", "/banner6.png"];
+const images = ["home.png","/banner4.png",  "/banner6.png"];
 
 export default function WelcomeSection() {
   const [index, setIndex] = useState(0);
@@ -30,7 +30,7 @@ export default function WelcomeSection() {
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/90 opacity-60"></div>
 
       {/* 
         MAIN FIX:
@@ -52,9 +52,9 @@ export default function WelcomeSection() {
           </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-  <Link to="/services" className="w-auto">
+  <Link to="/about" className="w-auto">
     <button className="w-auto px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-lg font-semibold hover:bg-gray-700 transition duration-300 shadow-lg">
-      Our Services
+      Know More 
     </button>
   </Link>
   <Link to="/contact" className="w-auto">
