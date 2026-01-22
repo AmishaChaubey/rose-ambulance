@@ -41,15 +41,16 @@ export default function WelcomeSection() {
       */}
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 pt-42 pb-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
-            Dignified. Compassionate.
-            <span className="text-gray-300 block sm:inline">24/7 Funeral Services</span>
-          </h1>
+         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
+  With You in Every Moment.
+  <span className="text-gray-300 block sm:inline">24/7 Compassionate Care</span>
+</h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            In times of loss, we provide respectful and professional funeral services. 
-            Our team is available around the clock to support your family with care and dignity.
-          </p>
+<p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+  We offer professional and dignified funeral services to help families through difficult moments.
+  Available around the clock, our team ensures respectful care and reliable support when you need it most.
+</p>
+
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
   <Link to="/about" className="w-auto">
