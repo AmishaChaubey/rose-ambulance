@@ -53,7 +53,7 @@ export default function WelcomeSection() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
   <Link to="/about" className="w-auto">
-    <button className="w-auto px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-gray-700 transition duration-300 shadow-lg">
+    <button className="w-auto px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition duration-300 shadow-lg">
       Know More 
     </button>
   </Link>
