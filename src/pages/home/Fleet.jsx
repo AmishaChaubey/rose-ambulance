@@ -23,7 +23,7 @@ const AmbulanceGallery = () => {
     },
     {
       id: 2,
-      src: "/fleet/2.png",
+      src: "https://i.pinimg.com/1200x/81/75/45/817545ec8b65bcbbda6e58f07f545e4b.jpg",
       title: "Cruiser Ambulance",
       desc: "Basic life support ambulance",
       vehicleNo: "DL-1CA-5678",
