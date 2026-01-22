@@ -608,7 +608,7 @@ export default function FuneralNavbar() {
 
               <button
                 onClick={() => setBookingModalOpen(true)}
-                className="glow-button relative bg-[#d03b38] text-white px-4 xl:px-5 py-2 xl:py-2.5 rounded-full flex items-center gap-2 shadow-lg font-display text-xs xl:text-sm font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 touch-target"
+                className="glow-button relative bg-[#d03b38] text-white px-4 xl:px-5 py-2 xl:py-2.5 rounded-lg flex items-center gap-2 shadow-lg font-display text-xs xl:text-sm font-semibold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 touch-target"
               >
                 <Phone className="w-3.5 h-3.5 xl:w-4 xl:h-4 relative z-10" />
                 <span className="relative z-10">Book Now</span>

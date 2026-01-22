@@ -30,6 +30,7 @@ import GreenPark from './network/green-park/page';
 import HauzKhas from './network/hauz-khas/page';
 import Malviya from './network/malviya/page';
 import SouthDelhi from './network/south-delhi/page'
+import AmbulanceFleet from "./pages/home/Fleet";
 
 
 const App = () => {
@@ -51,6 +52,7 @@ const App = () => {
                 {/* <MedicalTeamEquipment/> */}
                 <CallToAction />
                 <WhyChooseUs />
+                <AmbulanceFleet/>
                 <ServiceSection />
                 <Testimonials />
                 <CoverageArea/>
